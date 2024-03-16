@@ -1,0 +1,122 @@
+/* mobile */
+@media (max-width:767px){
+    /* start header */
+    header nav ul{
+        display: none;
+    }
+    header nav .toggle-menu:hover + ul{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    header nav .toggle-menu:hover + ul li a{
+        padding: 15px !important;
+    }
+    /* end header */
+    /* start landing */
+    .landing .text{
+        width: 100%;
+    } 
+    .landing .text .content{
+        max-width: 100%;
+    }
+    .landing .change-background{
+        display: none;
+    }
+    /* end landing*/
+    /* start services */
+    .services .serv-box{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .services .serv-box i{
+        margin: 0 0 30px;
+    }
+    /* end services */
+    /* start desgin */
+    .desgin .image{
+        display: none;
+    }
+    .desgin .text{
+        padding: 50px;
+        font-size: 16px;
+    }
+    /* end desgin */
+    .video .text{
+        max-height: 80%;
+    }
+    .video .text button{
+       margin-top: 30px;
+    }
+    /* start about */
+    .about img{
+        bottom: -60px;
+        margin-top: -60px;
+    }
+    /* end about */
+    /*  */
+    .Statistics .container .box{
+        flex-basis: 100%;
+    }
+    /*  */
+    /*  */
+    .our-skills .testimonials .content{
+        flex-direction: column;
+        text-align: center;
+    }
+    .our-skills .testimonials .content img{
+        margin: 0 auto 20px;
+    }
+}
+/* Small */
+@media(min-width:768px){
+    .container{
+        width: 750px;
+    }
+    header nav .toggle-menu{
+        display: none;
+    }
+    .services .services-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fill ,minmax(450px ,1fr));
+        column-gap: 40px;
+        row-gap:60px ;
+    }
+    /* start portfolio */
+    .portfolio .imgs-container .box {
+        flex-basis: 50%;
+      }
+    /* end portfolio */
+    /*  */
+    .Statistics .container .box{
+        flex-basis: 50%;
+    }
+}
+
+/* Medium*/
+@media(min-width:992px){
+    .container{
+        width: 970px;
+    }
+    /*  */
+    .Statistics .container .box{
+        flex-basis: 25%;
+    }
+    /*  */
+}
+
+/* Large */
+@media(min-width:1200px){
+    .container{
+        width: 1170px;
+    }
+    .portfolio .imgs-container .box {
+        flex-basis: 25%;
+      }
+}
